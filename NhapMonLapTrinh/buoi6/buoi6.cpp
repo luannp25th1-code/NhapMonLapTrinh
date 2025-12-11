@@ -20,7 +20,16 @@ void cau2() {
 	}
 	cout << "Tich: " << tich << endl;
 }
+void cau3() {
+	int x, n, tich = 1;
+	cout << "Nhap x, n: ";
+	cin >> x >> n;
+	for (int i = 1; i <= n; i++) {
+		tich *= x;
+	}
+	cout << "Tich: " << tich << endl;
+}
 int main()
 {
-	cau2();
+	cau3();
 }

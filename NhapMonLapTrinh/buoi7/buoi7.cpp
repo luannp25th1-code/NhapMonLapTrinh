@@ -1,12 +1,32 @@
 #include <iostream>
-#include "SoNguyen.h"
 using namespace std;
 
-int main()
-{
-	int a = 25, b = 60;
-	int uocchunglonnhat = UCLN(a, b);
-	cout << "Uoc chung lon nhat: " << uocchunglonnhat << endl;
+bool kiemTraSoNguyenTo(int n) {
+
+	if (n < 2) return false;
+
+	for (int i = 2; i * i <= n; i++)
+
+		if (n % i == 0) return false;
+
+	return true;
+
 }
 
+int main() {
 
+	int n;
+
+	cin >> n;
+
+	if (kiemTraSoNguyenTo)
+
+		cout << n << "la so nguyen to";
+
+	else
+
+		cout << n << "khong phai la so nguyen to";
+
+	return 0;
+
+}
